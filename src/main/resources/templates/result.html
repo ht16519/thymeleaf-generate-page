@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>static template demo</title>
+</head>
+<body>
+    <h1>test create page!</h1>
+    <ul>
+        <li>以前，</li>
+        <li>我们想方设法，</li>
+        <li>实现动态页面，</li>
+        <li>但是现在，</li>
+        <li>我们却使用方法让页面静态化！</li>
+    </ul>
+    <button style="width: 100px;height: 40px;" type="button" value="生成静态模板" onclick="hitBtn()"></button>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+<script type="text/javascript">
+    function hitBtn() {
+        $.get('/demo/create', {}, function (result) {
+
+        });
+    }
+</script>
+</html>

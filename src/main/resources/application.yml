@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: thymeleaf-demo
+server:
+  port: 9527

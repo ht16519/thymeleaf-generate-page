@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>static template demo</title>
+</head>
+<body>
+    <h1 th:text="${name}">列表名称</h1>
+    <ul>
+        <li th:each="item: ${array}" th:text="${item}">条目</li>
+    </ul>
+    <button style="width: 100px;height: 40px;" type="button" value="生成静态模板" onclick="hitBtn()"></button>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+<script type="text/javascript">
+    function hitBtn() {
+        $.get('/demo/create', {}, function (result) {
+
+        });
+    }
+</script>
+</html>
